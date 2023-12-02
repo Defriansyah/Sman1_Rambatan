@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link CDN Tailwind CSS JANGAN DIHAPUS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- link Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <title>Beranda</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+
+    <nav
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="assets/logo/Logo Tut Wuri Handayani.png"
+            class="h-8"
+            alt="Logo Tut Wuri Handayani"
+          />
+          <img src="assets/logo/Logo Sman1.jpg" class="h-8" alt="Logo SMAN 1" />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Kerajaan Kutai</span
+          >
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
+              >
+                Materi
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="materi.html"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Pertemuan 1</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Pertemuan 2</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Pertemuan 3</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >About</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- End Navbar -->
+
+    <!-- Jumbotron Start -->
+
+    <br /><br />
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+        <div
+          class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8"
+        >
+        <a href="materi.html">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5H1m0 0 4 4M1 5l4-4"/> 
+              </svg>
+            
+            <h1
+            class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2"
+          >
+            Kerajaan Kutai
+          </h1>
+        </a>
+          
+          <br />
+          <div>
+            <h4><b>Awal Berdirinya Kerajaan kutai</b></h4>
+            <br />
+            <hr class="border-gray-300" />
+            <br />
+            <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
+              Masuknya pengaruh budaya India ke Nusantara, menyebabkan budaya
+              Indonesia mengalami perubahan. Perubahan yang terpenting adalah
+              timbulnya suatu sistem pemerintahan dengan raja sebagai kepalanya.
+              Sebelum budaya India masuk, pemerintahan hanya dipimpin oleh seorang
+              kepala suku. Kutai merupakan kerajaan pertama di Indonesia. Kerajaan
+              Kutai terletak di Kalimantan Timur, tepatnya daerah Muara Kaman di
+              hulu sungai Mahakam. Nama Kutai sendiri diambil dari nama kota
+              dimana ditemukannya prasasti yang menunjukkan keberadaan kerajaan
+              tersebut, yaitu di kota Kutai, Kalimantan Timur. Hal ini disebabkan
+              karena tidak ada satupun prasasti yang menyebutkan nama dari
+              kerajaan yang berpusat di Kalimantan Timur Tersebut.. <br>
+  
+              <div class="flex justify-center">
+                  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                      <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="assets/img/peta kerajaan kutai.jpg" alt="">
+                      <div class="flex flex-col justify-between p-4 leading-normal">
+                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Peta daerah Muara Kaman, Tempat berdirinya Kerajaan Kutai</h5>
+                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sumber Google Maps</p>
+                      </div>
+                  </a>
+              </div>
+              <br>
+  
+              <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
+                  Bukti sejarah Kerajaan Kutai ini adalah ditemukannya tujuh buah
+                  prasasti yang berbentuk Yupa (tiang batu). Salah satu prasasti
+                  tersebut memuat silsilah Mulawarman, yakni: <br /> <br>“śrīmatah
+                  śrī-narendrasya; kuṇḍuṅgasya mahātmanaḥ; putro śvavarmmo
+                  vikhyātah; vaṅśakarttā yathāṅśumān; tasya putrā mahātmānaḥ; trayas
+                  traya ivāgnayaḥ; teṣān trayāṇām pravaraḥ; tapo-bala-damānvitaḥ;
+                  śrī mūlavarmmā rājendro; yaṣṭvā bahusuvarṇnakam; tasya yajñasya
+                  yūpo ‘yam; dvijendrais samprakalpitaḥ.” <br /><br>
+                  Artinya, “Sang Mahārāja Kundungga, yang amat mulia, mempunyai
+                  putra yang mashur, Sang Aśwawarmman namanya, yang seperti Angśuman
+                  (dewa Matahari) menumbuhkan keluarga yang sangat mulia. Sang
+                  Aśwawarmman mempunyai putra tiga, seperti api (yang suci). Yang
+                  terkemuka dari ketiga putra itu ialah Sang Mūlawarmman, raja yang
+                  berperadaban baik, kuat, dan kuasa. Sang Mūlawarmman telah
+                  mengadakan kenduri (selamatan yang dinamakan) emas-amat-banyak.
+                  Untuk peringatan kenduri (selamatan) itulah tugu batu ini
+                  didirikan oleh para brahmana.” <br /> <br>Pada prasasti tersebut juga
+                  diceritakan bahwa Raja Mulawarman memerintah dengan bijaksana. Ia
+                  pernah menghadiahkan ± 20.000 ekor sapi untuk korban kepada para
+                  brahmana (pendeta). Prasasti tersebut juga menyatakan bahwa Raja
+                  Aswawarman merupakan pendiri dinasti, bukan <br /> <br>
+                  Kata Yupa tertera dalam prasasti tersebut. Ketujuh yupa itu
+                  sekarang disimpan di Museum Nasional Jakarta, ditulis dengan huruf
+                  Pallawa dalam bahasa Sansekerta. Prasasti yupa tidak menyebut
+                  angka tahun, tetapi analogi dengan prasasti yang ditemukan di
+                  India Selatan, dapat diperkirakan prasasti yupa itu berasal dari
+                  pertengahan abad V. Lebih lanjut baca, Edhie Wurjantoro.
+                  “Mulawarman (Kutai) di Kalimantan Bagian Timur ”, dalam Taufik
+                  Abdullah dan A.B. Lapian, Indonesia dalam….., hal. 42. Marwati
+                  Djoened Poesponegoro dan Nugroho Notosusanto. Sejarah Nasional
+                  Indonesia II: Zaman Kuno. Jakarta: Balai Pustaka. , hal. 36. Edhie
+                  Wurjantoro. “Mulawarman (Kutai) di Kalimantan Bagian Timur ”,
+                  dalam Taufik Abdullah dan A.B. Lapian, Indonesia dalam….., hal.
+                  43. <br> <br>
+              </p>
+             
+  
+                <div class="flex justify-center">
+                  <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                      <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="assets/img/prasasti kerajaan kutai.jpg" alt="">
+                      <div class="flex flex-col justify-between p-4 leading-normal">
+                          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Prasasti Kerajaan Kutai</h5>
+                          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Sumber Google</p>
+                      </div>
+                  </a>
+              </div>
+              <br>
+  
+              <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
+                  ayahnya Kudungga. Hal ini karena pada saat itu Raja Kudungga belum memeluk agama Hindu, sehingga ia tidak bisa menjadi pendiri dinasti Hindu.
+                  Munculnya kerajaan ini tidak terlepas dari situasi jalur perdagangan sebelumnya yang sudah tidak aman lagi, sehingga jalur perdagangan berubah menyusuri daerah kalimantan dan menjadikan daerah ini menjadi ramai. Kerajaan Kutai pertama kali didirikan oleh Aswawarman sekitar abad ke-5 M yang diberi gelar Wangsakerta artinya pembentuk keluarga kerajaan. Berdasarkan nama kerajaan Kutai yang bercorak Hindu berawal dari pemerintahan Aswawarman.
+              </p>
+            </p>
+          </div>
+          <hr class="border-gray-300">
+          <br><br>
+          <div>
+            <h4><b>Kehidupan Politik</b></h4>
+            <br />
+            <hr class="border-gray-300" />
+            <br />
+            <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
+                Sejak muncul dan berkembangnya pengaruh hindu (India) di Kalimantan Timur, terjadi perubahan dalam kepemerintahan, yaitu dari pemerintahan suku dengan kepala suku yang memerintah menjadi kerajaan dengan seorang raja sebagai kepala pemerintahan. Beberapa raja yang pernah memerintah Kerajaan Kutai,  <br>
+  
+            
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="https://asset-a.grid.id/crop/55x18:275x163/700x465/photo/2022/01/04/downloadjpg-20220104063322.jpg" alt="" width="450px"/>
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Raja Kudungga</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Merupakan raja pertama yang berkuasa di kerajaan Kutai. Dari namanya dapat diketahui bahwaraja tersebut masih menggunakan nama lokal sehingga para ahli berpendapat bahwa pada masa pemerintahan Raja Kudungga pengaruh Hindu baru masuk ke wilayahnya. Kedudukan Raja Kudungga pada awalnya adalah kepala suku. Dengan masuknya pengaruh Hindu, ia mengubah struktur pemerintahannya menjadi kerajaan dan mengangkat dirinya sebagai raja, sehingga penggantian raja dilakukan secara turun temurun.</p>
+                        </div>
+                    </div>
+                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="https://www.goodnewsfromindonesia.id/uploads/images/2023/01/1913252023-mulawarman-f5a52217628ac5b11c3bb120b64d0810.jpg" alt="" width="500px"/>
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Raja Aswawarman</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Prasasti yupa menceritakan bahwa Raja Aswawarman adalah raja yang cakap dan kuat. Pada masa pemerintahannya, wilayah kekuasaan Kutai diperluas lagi. Hal ini dibuktikan dengan dilakukannya Upacara Asmawedha pada masanya. Upacara-upacara ini pernah dilakukan di India pada masa pemerintahan Raja Samudragupta ketika ingin memperluas wilayahnya. Dalam upacara itu dilaksanakan pelepasan kuda dengan tujuan untuk menentukan batas kekuasaan Kerajaan Kutai (ditentukan dengan tapak kaki kuda yang nampak pada tanah hingga tapak yang terakhir nampak disitulah batas kekuasaan Kerajaan Kutai). Pelepasan kuda-kuda itu diikuti oleh prajurit Kerajaan Kutai..</p>
+                        </div>
+                    </div>
+                    <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                        <a href="#">
+                            <img class="rounded-t-lg" src="assets/img/raja mulawarman.jpg" alt=""/>
+                        </a>
+                        <div class="p-5">
+                            <a href="#">
+                                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Raja Mulawarman</h5>
+                            </a>
+                            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Raja Mulawarman merupakan anak dari Raja Aswawarman yang menjadi penerusnya. Raja Mulawarman adalah raja terbesar dari Kerajaan Kutai. Di bawah pemerintahannya, Kerajaan Kutai mengalami masa kejayaannya. Rakyat-rakyatnya hidup tentram dan sejahtera hingga Raja Mulawarman mengadakan upacara kurban emas yang amat banyak.
+                                Kerajaan Kutai mengalami kemajuan dalam bidang politik dengan menaklukan raja-raja sekitarnya. Pada bidang sosial, masyarakat telah mengenal pembagian kasta-kasta seperti di India. Pada bidang ekonomi, masyarakat kaya dan makmur dengan mata pencaharian utama pelayaran dan perdagangan. Hal ini tidak terlepas dari raja Mulawarman yang merupakan seorang raja yang arif dan bijaksana, berhati baik dan mulia dan selalu memperhatikan kesejahteraan rakyat, yang terbukti dengan mengadakan upacara korban dan memberikan hadiah tanah dan 20.000 ekor sapi kepada rakyat dan kaum Brahmana. 
+                                .</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <br><br>
+          <div>
+            <h4><b>Runtuhnya kerajaaan Kutai</b></h4>
+            <br />
+            <hr class="border-gray-300" />
+            <br />
+            
+            <div class="flex justify-center">
+                <a href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="assets/img/siklus kerajaan kutai.jpg" alt="">
+                    <div class="flex flex-col justify-between p-4 leading-normal">
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Siklus Kerajaan Kutai</h5>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kerajaan Kutai runtuh saat raja Kerajaan Kutai terakhir yang bernama Maharaja Dharma Setia tewas di tangan Raja Kutai Kartanegara ke-13, Aji Pangeran Anum Panji Mendapa. Kerajaan Kutai Kartanegara selanjutnya menjadi Kerajaan Islam yang bernama Kesultanan Kutai Kartanegara.</p>
+                    </div>
+                </a>
+            </div>
+            <br><br>
+            <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Video Kerajaan Kutai</h5>
+            </div>
+            <hr class="border-gray-300">
+            <br><br>
+            <div class="flex justify-center">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Id-DVfa2z10?si=yrMZRsIqb-Gw8wk9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+          <br><br>
+          <div class="flex justify-end">
+            <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0">
+              <a
+                href="#"
+                class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+              >
+                Baca Materi Kerajaan Lainnya
+                <svg
+                  class="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+         
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jumbotron End -->
+
+    <!-- Footer Start -->
+
+    <footer
+      class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600"
+    >
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+        >© 2023
+        <a href="https://flowbite.com/" class="hover:underline"
+          >SMA NEGERI 1 RAMBATAN</a
+        >
+      </span>
+      <ul
+        class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+      >
+        <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Home</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline me-4 md:me-6">Materi</a>
+        </li>
+        <li>
+          <a href="#" class="hover:underline me-4 md:me-6">About</a>
+        </li>
+      </ul>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Link CDN Tailwind Javacript JANGAN DIHAPUS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+  </body>
+</html>
